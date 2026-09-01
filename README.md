@@ -1,5 +1,4 @@
 # Food-Delivery-Application
-<img width="1890" height="931" alt="Screenshot 2026-09-01 190257" src="https://github.com/user-attachments/assets/946aa6fc-2904-4a91-98f5-97edddba6e3e" />
 <img width="1915" height="908" alt="Screenshot 2026-09-01 190103" src="https://github.com/user-attachments/assets/ab112989-231f-4022-bdbf-2bc0ea24dbf7" />
 <img width="1915" height="929" alt="Screenshot 2026-09-01 163148" src="https://github.com/user-attachments/assets/75bc6124-0897-45a8-aaa3-293548a2a984" />
 <img width="1917" height="936" alt="Screenshot 2026-09-01 185911" src="https://github.com/user-attachments/assets/5a5e91db-2cce-48c4-8e55-662c0a686286" />
