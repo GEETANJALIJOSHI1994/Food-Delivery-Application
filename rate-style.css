@@ -1,0 +1,117 @@
+:root{
+  --bg: #0F1B17;
+  --card: #16241E;
+  --accent: #FFC93C;
+  --accent-dark: #E0A800;
+  --text: #F4F4F0;
+  --text-dim: #9BA79E;
+  --success: #4CAF7D;
+}
+
+* { box-sizing: border-box; margin:0; padding:0; }
+
+body{
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 16px 24px;
+  background: var(--card);
+  position: sticky;
+  top: 0;
+}
+
+.topbar-left{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+}
+
+.logo-icon{ font-size: 26px; }
+
+.topbar-left h1{ font-size: 17px; }
+
+.sub{
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-top: 2px;
+}
+
+.view-app-btn{
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.rate-wrap{
+  padding: 24px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.order-card{
+  background: var(--card);
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.order-emoji{
+  font-size: 36px;
+  width: 56px;
+  height: 56px;
+  background: #1F2E27;
+  border-radius: 12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.order-details{
+  flex: 1;
+}
+
+.order-name{
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.order-date{
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+
+.stars{
+  display:flex;
+  gap: 4px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.stars .star{
+  color: #3A4A41;
+  transition: color 0.15s;
+}
+
+.stars .star.filled{
+  color: var(--accent);
+}
+
+.rated-msg{
+  font-size: 12px;
+  color: var(--success);
+  margin-top: 6px;
+  display: none;
+}

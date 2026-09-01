@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickBite - Checkout</title>
+<link rel="stylesheet" href="checkout-style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="logo-icon">🧾</div>
+      <h1>Order Summary</h1>
+    </div>
+    <a href="menu.html" class="view-app-btn">← Back to Menu</a>
+  </header>
+
+  <main class="checkout-wrap">
+    <div class="cart-items" id="cartItems">
+      <!-- Cart items yahan JavaScript se add honge -->
+    </div>
+
+    <div class="bill-card">
+      <div class="bill-row">
+        <span>Item Total</span>
+        <span id="itemTotal">₹0</span>
+      </div>
+      <div class="bill-row">
+        <span>Delivery Fee</span>
+        <span id="deliveryFee">₹25</span>
+      </div>
+      <div class="bill-row total-row">
+        <span>To Pay</span>
+        <span id="grandTotal">₹0</span>
+      </div>
+    </div>
+
+    <button class="pay-btn" id="payBtn">Pay with Razorpay</button>
+    <p class="secure-note">🔒 Secure payment powered by Razorpay</p>
+  </main>
+
+  <script src="api-config.js"></script>
+  <script src="checkout-script.js"></script>
+</body>
+</html>

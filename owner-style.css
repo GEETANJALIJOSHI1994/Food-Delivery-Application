@@ -1,0 +1,170 @@
+:root{
+  --bg: #0F1B17;
+  --card: #16241E;
+  --accent: #FFC93C;
+  --accent-dark: #E0A800;
+  --text: #F4F4F0;
+  --text-dim: #9BA79E;
+  --success: #4CAF7D;
+  --danger: #FF6B5B;
+}
+
+* { box-sizing: border-box; margin:0; padding:0; }
+
+body{
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 16px 24px;
+  background: var(--card);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.topbar-left{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+}
+
+.logo-icon{ font-size: 28px; }
+
+.topbar-left h1{ font-size: 18px; }
+
+.location{
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-top: 2px;
+}
+
+.view-app-btn{
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.owner-wrap{
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.owner-table{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.owner-row{
+  background: var(--card);
+  border-radius: 12px;
+  padding: 16px 18px;
+  display: grid;
+  grid-template-columns: 40px 1.5fr 1fr 1fr 1fr auto;
+  align-items: center;
+  gap: 14px;
+}
+
+.row-emoji{ font-size: 26px; text-align: center; }
+
+.row-name{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.row-field label{
+  display:block;
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-bottom: 4px;
+}
+
+.row-field input{
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #2A3B33;
+  background: #0F1B17;
+  color: var(--text);
+  font-size: 13px;
+  outline: none;
+}
+
+.row-field input:focus{
+  border-color: var(--accent);
+}
+
+.final-price{
+  text-align:center;
+}
+
+.final-price .label{
+  font-size: 11px;
+  color: var(--text-dim);
+  display:block;
+  margin-bottom: 4px;
+}
+
+.final-price .value{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--success);
+}
+
+.save-btn{
+  padding: 9px 14px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.save-btn:hover{
+  background: var(--accent-dark);
+}
+
+.save-btn.saved{
+  background: var(--success);
+  color: white;
+}
+
+.add-item-btn{
+  width: 100%;
+  padding: 14px;
+  border: 2px dashed #2A3B33;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--text-dim);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-item-btn:hover{
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 700px){
+  .owner-row{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "emoji name"
+      "price discount"
+      "final save";
+  }
+}

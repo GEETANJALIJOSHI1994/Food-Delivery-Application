@@ -1,0 +1,179 @@
+:root{
+  --bg: #0F1B17;
+  --card: #16241E;
+  --accent: #FFC93C;
+  --accent-dark: #E0A800;
+  --text: #F4F4F0;
+  --text-dim: #9BA79E;
+  --success: #4CAF7D;
+  --danger: #FF6B5B;
+}
+
+* { box-sizing: border-box; margin:0; padding:0; }
+
+body{
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 16px 24px;
+  background: var(--card);
+  position: sticky;
+  top: 0;
+}
+
+.topbar-left{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+}
+
+.logo-icon{ font-size: 26px; }
+.topbar-left h1{ font-size: 17px; }
+
+.sub{
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-top: 2px;
+}
+
+.view-app-btn{
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.track-wrap{
+  padding: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ---- Status steps ---- */
+.status-steps{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.status-steps::before{
+  content:'';
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  right: 24px;
+  height: 2px;
+  background: #2A3B33;
+  z-index: 0;
+}
+
+.step{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 6px;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
+
+.step-dot{
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #2A3B33;
+  color: transparent;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background 0.3s, color 0.3s;
+}
+
+.step.active .step-dot{
+  background: var(--success);
+  color: white;
+}
+
+.step span{
+  font-size: 10.5px;
+  color: var(--text-dim);
+  text-align: center;
+}
+
+.step.active span{
+  color: var(--text);
+}
+
+/* ---- Map ---- */
+.map-card{
+  background: var(--card);
+  border-radius: 16px;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.map-card svg{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.eta-badge{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(15,27,23,0.9);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+#deliveryMarker{
+  transition: transform 0.05s linear;
+}
+
+/* ---- Delivery partner info ---- */
+.delivery-info{
+  background: var(--card);
+  border-radius: 14px;
+  padding: 14px 16px;
+  display:flex;
+  align-items:center;
+  gap: 12px;
+}
+
+.info-emoji{
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  background: #1F2E27;
+  border-radius: 50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.info-name{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.info-role{
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-top: 2px;
+}

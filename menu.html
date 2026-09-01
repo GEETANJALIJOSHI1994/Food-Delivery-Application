@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BiteRush - Menu</title>
+<link rel="stylesheet" href="menu-style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="logo-icon">🛵</div>
+      <div>
+        <h1>BiteRush</h1>
+        <p class="location">📍 Delivering to: Dehradun</p>
+      </div>
+    </div>
+    <div class="cart-icon" id="cartIcon">
+      🛒 <span class="cart-count" id="cartCount">0</span>
+    </div>
+    <a href="rate.html" class="rate-link">⭐ Rate Your Orders</a>
+    <a href="track.html" class="rate-link">🛵 Live Track Karein</a>
+    <a href="email-template.html" class="rate-link">📧 Offer Email Dekhein</a>
+  </header>
+
+  <main class="menu-wrap">
+    <h2 class="section-title">Today's Specials Food</h2>
+
+    <div class="food-grid" id="foodGrid">
+      <!-- Food cards yahan JavaScript se add honge -->
+    </div>
+  </main>
+
+ <script src="api-config.js"></script>
+<script src="menu-data.js"></script>
+<script src="menu-script.js"></script>
+</body>
+</html>

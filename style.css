@@ -1,0 +1,153 @@
+:root{
+  --bg: #0F1B17;
+  --card: #16241E;
+  --accent: #FFC93C;
+  --accent-dark: #E0A800;
+  --text: #F4F4F0;
+  --text-dim: #9BA79E;
+  --success: #4CAF7D;
+}
+
+* { box-sizing: border-box; margin:0; padding:0; }
+
+body{
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 20px;
+}
+
+.login-card{
+  background: var(--card);
+  width: 100%;
+  max-width: 380px;
+  border-radius: 18px;
+  padding: 36px 28px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+.logo{
+  text-align:center;
+  margin-bottom: 28px;
+}
+
+.logo-icon{
+  font-size: 40px;
+}
+
+.logo h1{
+  font-size: 24px;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+}
+
+.logo p{
+  color: var(--text-dim);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.field{
+  margin-bottom: 18px;
+}
+
+.field label{
+  display:block;
+  font-size: 13px;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+}
+
+.field input{
+  width: 100%;
+  padding: 13px 14px;
+  border-radius: 10px;
+  border: 1px solid #2A3B33;
+  background: #0F1B17;
+  color: var(--text);
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.field input:focus{
+  border-color: var(--accent);
+}
+
+.login-btn{
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.login-btn:hover{
+  background: var(--accent-dark);
+}
+
+.divider{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  margin: 20px 0;
+  color: var(--text-dim);
+  font-size: 12px;
+}
+
+.divider::before, .divider::after{
+  content: '';
+  flex:1;
+  height: 1px;
+  background: #2A3B33;
+}
+
+.signup-link{
+  text-align:center;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.signup-link a{
+  color: var(--accent);
+  text-decoration:none;
+  font-weight: 600;
+}
+
+.msg{
+  display:none;
+  text-align:center;
+  background: rgba(76,175,125,0.15);
+  color: var(--success);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-top: 14px;
+}
+
+.msg.error{
+  background: rgba(255,107,91,0.15);
+  color: #FF6B5B;
+}
+
+.msg .inline-link{
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.hint{
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 5px;
+}

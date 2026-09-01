@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BiteRush - Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="login-card">
+    <div class="logo">
+      <div class="logo-icon">🛵</div>
+      <h1>BiteRush</h1>
+      <p>Delicious food delivered to your door in 10 minutes.</p>
+    </div>
+
+    <form id="loginForm">
+      <div class="field">
+        <label for="phone">Mobile Number</label>
+        <input type="tel" id="phone" placeholder="98765 43210" required>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••" required>
+      </div>
+
+      <button type="submit" class="login-btn">Login Now</button>
+    </form>
+
+    <div class="msg" id="successMsg">Login successful! Order your favorite food now.</div>
+
+    <div class="divider">or</div>
+
+    <div class="signup-link">
+      Join us today!<a href="signup.html"> Create your account.</a>
+    </div>
+  </div>
+  
+  <script src="api-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

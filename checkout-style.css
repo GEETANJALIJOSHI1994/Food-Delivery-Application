@@ -1,0 +1,133 @@
+:root{
+  --bg: #0F1B17;
+  --card: #16241E;
+  --accent: #FFC93C;
+  --accent-dark: #E0A800;
+  --text: #F4F4F0;
+  --text-dim: #9BA79E;
+  --success: #4CAF7D;
+}
+
+* { box-sizing: border-box; margin:0; padding:0; }
+
+body{
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 16px 24px;
+  background: var(--card);
+  position: sticky;
+  top: 0;
+}
+
+.topbar-left{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+}
+
+.logo-icon{ font-size: 24px; }
+.topbar-left h1{ font-size: 17px; }
+
+.view-app-btn{
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.checkout-wrap{
+  padding: 24px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cart-items{
+  background: var(--card);
+  border-radius: 14px;
+  padding: 6px 16px;
+  margin-bottom: 16px;
+}
+
+.cart-item-row{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #22352B;
+}
+
+.cart-item-row:last-child{ border-bottom: none; }
+
+.item-emoji{ font-size: 22px; }
+
+.item-name{
+  flex: 1;
+  font-size: 14px;
+}
+
+.item-price{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--success);
+}
+
+.bill-card{
+  background: var(--card);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin-bottom: 18px;
+}
+
+.bill-row{
+  display:flex;
+  justify-content: space-between;
+  font-size: 13.5px;
+  color: var(--text-dim);
+  padding: 6px 0;
+}
+
+.total-row{
+  border-top: 1px solid #22352B;
+  margin-top: 6px;
+  padding-top: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.pay-btn{
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pay-btn:hover{
+  background: var(--accent-dark);
+}
+
+.pay-btn:disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.secure-note{
+  text-align: center;
+  font-size: 11.5px;
+  color: var(--text-dim);
+  margin-top: 10px;
+}
